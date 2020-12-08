@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-
-
-
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+//import './../style/Navbar.css'
 
 class Navbar extends Component{
     constructor(props){
@@ -9,8 +8,8 @@ class Navbar extends Component{
     }
     render(){
         return(
-            <div>
-                
+            <div className='navbar'>
+                <h1>This is the navbar</h1>
             </div>
         )
     }
