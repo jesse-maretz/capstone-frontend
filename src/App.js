@@ -6,6 +6,9 @@ import Energy from './components/Energy'
 import Habits from './components/Habits'
 import Footprint from './components/Footprint'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+
+
 function App() {
   return (
     <div>
