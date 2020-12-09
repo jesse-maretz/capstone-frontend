@@ -13,11 +13,32 @@ class Navbar extends Component{
             <div className='navbar'>
                 <h1>This is the navbar</h1>
                 <Container>
+                    <Link to='/'>
+                        <Button
+                        variant='contained'
+                        color='primary'>
+                            Home
+                        </Button>
+                    </Link>
                     <Link to='/data'>
                         <Button
                         variant='contained'
-                        color='primary'
-                        >Data charts
+                        color='primary'>
+                            Data charts
+                        </Button>
+                    </Link>
+                    <Link to='/footprint'>
+                        <Button
+                        variant='contained'
+                        color='primary'>
+                            Carbon Footprint
+                        </Button>
+                    </Link>
+                    <Link to='/habits'>
+                        <Button
+                        variant='contained'
+                        color='primary'>
+                            Habits
                         </Button>
                     </Link>
                 </Container>
