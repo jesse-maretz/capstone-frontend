@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './../style/TrendingStory.css'
 
 class TrendingStory extends Component{
     constructor(props){
@@ -25,7 +25,7 @@ class TrendingStory extends Component{
 
     render(){
         return(
-            <div>
+            <div className="stories">
                 <h1>This is TrendingStory</h1>
                 {
                     this.state.feed.length ?
@@ -33,7 +33,6 @@ class TrendingStory extends Component{
                         console.log(news)
                         return <div key={i}>
                             {news.title}<br/>
-                            {news.author}<br/>
                             <br/>
                         </div>
                     }) : ""
