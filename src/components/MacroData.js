@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Navbar from './Navbar'
 
 
-class Habits extends Component{
+class MacroData extends Component{
     constructor(props){
         super(props)
     }
@@ -15,7 +15,7 @@ class Habits extends Component{
                 <header>
                     <Navbar />
                 </header>
-                <h1>This is the Habits page</h1>
+                <h1>This is the MacroData page</h1>
                 
             </div>
         )
@@ -23,4 +23,4 @@ class Habits extends Component{
 }
 
 
-export default Habits
+export default MacroData

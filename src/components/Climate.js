@@ -73,7 +73,11 @@ class Climate extends Component {
 
 
     render() { 
-        return (  );
+        return (
+            <div>
+                <h1>This is the climate page</h1>
+            </div>
+        );
     }
 }
  
