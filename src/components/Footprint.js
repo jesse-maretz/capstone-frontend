@@ -15,6 +15,9 @@ class Footprint extends Component{
     handleFootprint = (e) => {
         this.setState({footprint: e.target.value})
     }
+    submitFootprint = (e) => {
+        console.log(e)
+    }
 
 
     render(){
@@ -33,13 +36,17 @@ class Footprint extends Component{
                     </iframe>
                 </div>
                 <Container>
-                    <InputLabel>Your footprint: </InputLabel>
-                    <Input
-                        required
-                        onChange={this.handleFootprint}
-                        type="number"
-                        placeholder="my footprint is...">
-                    </Input>
+                    <Box maxWidth={400}>
+                        <form onSubmit={this.submitFootprint}>
+                        <InputLabel>Your footprint: </InputLabel>
+                        <Input
+                            required
+                            onChange={this.handleFootprint}
+                            type="number"
+                            placeholder="my footprint is...">
+                        </Input>
+                        </form>
+                    </Box>
                 </Container>
             </div>
         )
