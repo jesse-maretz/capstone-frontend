@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
 import Trending from './Trending'
-
+import LoginReg from './LoginReg'
 
 class Landing extends Component{
     constructor(props){

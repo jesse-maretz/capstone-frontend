@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import TrendingStory from './TrendingStory'
 
-class Trending extends Component{
+class TrendingStory extends Component{
     constructor(props){
         super(props)
         this.state = {
@@ -11,18 +10,36 @@ class Trending extends Component{
 
 
 
+    componentDidMount = () => {
+        let url = "http://newsapi.org/v2/top-headlines?q=climate&apiKey=26d0575e08314d76855c5f4e867d9a6b"
+        fetch(url)
+            .then(res => res.json())
+            .then(news => {
+                this.setState({feed: news.articles})
+                console.log(this.state.feed)
+            })
+    }
 
 
 
     render(){
         return(
             <div>
-                <h1>This is Trending</h1>
-                <TrendingStory />
+                <h1>Climate change in the news</h1>
+                {
+                    this.state.feed.length ?
+                    this.state.feed.map((news, i)=>{
+                        console.log(news)
+                        return <div key={i}>
+                            {news.title}<br/>
+                            <br/>
+                        </div>
+                    }) : ""
+                }
             </div>
         )
     }
 }
 
 
-export default Trending
+export default TrendingStory;
