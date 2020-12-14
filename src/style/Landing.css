@@ -1,0 +1,8 @@
+main {
+    display: flex;
+    justify-content: space-around;
+}
+.land1left {
+    color: blue;
+    text-align: center;
+}

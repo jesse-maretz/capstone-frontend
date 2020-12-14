@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
+import Trending from './Trending'
 import LoginReg from './LoginReg'
+import './../style/Landing.css'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Container, Button } from '@material-ui/core';
 
@@ -19,7 +21,7 @@ class Landing extends Component{
                     <Navbar />
                 </header>
                 <main>
-                    <div className="land1">
+                    <div className="land1left">
                         <h1>We'd love for you to join us!</h1>
                         <Container>
                             <Link to='/loginReg'>
@@ -27,8 +29,8 @@ class Landing extends Component{
                             </Link>
                         </Container>
                     </div>
-                    <div className="land2">
-
+                    <div className="land1right">
+                        <Trending />
                     </div>
                 </main>                
             </div>
