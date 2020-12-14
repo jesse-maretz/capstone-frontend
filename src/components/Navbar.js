@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Container, Button } from '@material-ui/core';
+import './../style/Navbar.css'
 
-//import './../style/Navbar.css'
 
 class Navbar extends Component{
     constructor(props){
