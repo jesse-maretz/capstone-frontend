@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Button, InputLabel, Box, Input } from '@material-ui/core';
+import {Link} from 'react-router-dom'
 import './../style/LoginReg.css'
 
 class LoginReg extends Component {
@@ -59,11 +60,12 @@ class LoginReg extends Component {
                             placeholder="Create a password..."
                             onCHange={this.setRegPassword}>
                             </Input>
-                            <Button
-                            type="submit"
-                            >
-                                Submit
-                            </Button>
+                            <Link to='/'>
+                                <Button
+                                type="submit">
+                                    Submit
+                                </Button>
+                            </Link>
                         </form>
                         <h1>Login</h1>
                         <form onSubmit={this.handleLogin}>
@@ -79,11 +81,12 @@ class LoginReg extends Component {
                             placeholder="Your password..."
                             onChange={this.setLoginPassword}>
                             </Input>
-                            <Button
-                            type="submit"
-                            >
-                                Submit
-                            </Button>
+                            <Link to='/'>
+                                <Button
+                                type="submit">
+                                    Submit
+                                </Button>
+                            </Link>
                         </form>
                     </Box>
                 </Container>
