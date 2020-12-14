@@ -5,6 +5,7 @@ import Climate from './components/Climate'
 import Energy from './components/Energy'
 import Habits from './components/Habits'
 import Footprint from './components/Footprint'
+import LoginReg from './components/LoginReg'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 
@@ -25,6 +26,8 @@ function App() {
         component={Habits} />
         <Route exact path="/footprint"
         component={Footprint} />
+        <Route exact path="/loginReg"
+        component={LoginReg} />
       </Router>
     </div>
   );

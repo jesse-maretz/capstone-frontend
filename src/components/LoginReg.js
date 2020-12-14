@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Button, InputLabel, Box, Input } from '@material-ui/core';
-
+import './../style/LoginReg.css'
 
 class LoginReg extends Component {
     constructor(props){
@@ -31,6 +31,7 @@ class LoginReg extends Component {
 
     handleRegister = (e) => {
         console.log(e)
+        window.location('http://localhost:3000/')
     }
 
     handleLogin = (e) => {
@@ -41,7 +42,7 @@ class LoginReg extends Component {
 
     render() { 
         return (
-            <div>
+            <div className="mainBox">
                 <Container>
                     <Box>
                         <h1>Register</h1>
@@ -59,7 +60,8 @@ class LoginReg extends Component {
                             onCHange={this.setRegPassword}>
                             </Input>
                             <Button
-                            type="submit">
+                            type="submit"
+                            >
                                 Submit
                             </Button>
                         </form>
@@ -78,7 +80,8 @@ class LoginReg extends Component {
                             onChange={this.setLoginPassword}>
                             </Input>
                             <Button
-                            type="submit">
+                            type="submit"
+                            >
                                 Submit
                             </Button>
                         </form>
