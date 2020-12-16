@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class TrendingStory extends Component{
     constructor(props){
@@ -31,7 +32,9 @@ class TrendingStory extends Component{
                     this.state.feed.map((news, i)=>{
                         console.log(news)
                         return <div key={i}>
+                            <Link to={news.url}>
                             {news.title}<br/>
+                            </Link>
                             <br/>
                         </div>
                     }) : ""
