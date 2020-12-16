@@ -1,8 +1,19 @@
 main {
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .land1left {
-    color: blue;
+    color: green;
     text-align: center;
+}
+.land2 {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc
+}
+.land2card {
+    margin: 150px;
+    border: 2px solid black;
 }

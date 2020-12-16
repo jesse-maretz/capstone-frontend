@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Container, Button, InputLabel, Box, Input } from '@material-ui/core';
 import iframe from 'react-iframe' 
 import Navbar from './Navbar'
+import './../style/Footprint.css'
 
 
 class Footprint extends Component{
@@ -26,28 +27,29 @@ class Footprint extends Component{
                 <header>
                     <Navbar />
                 </header>
-                <h1>This is the Footprint calc</h1>
-                <div>
-                    <iframe id="footprintCalc"
-                        title="Footprint Calculator"
-                        width="1000"
-                        height="1000"
-                        src="https://www3.epa.gov/carbon-footprint-calculator/">
-                    </iframe>
+                <div className="footprintMain">
+                    <Container>
+                        <Box maxWidth={400}>
+                            <form onSubmit={this.submitFootprint}>
+                            <InputLabel>Your footprint: </InputLabel>
+                            <Input
+                                required
+                                onChange={this.handleFootprint}
+                                type="number"
+                                placeholder="my footprint is...">
+                            </Input>
+                            </form>
+                        </Box>
+                    </Container>
+                    <div className="calc">
+                        <iframe id="footprintCalc"
+                            title="Footprint Calculator"
+                            width="1000"
+                            height="1000"
+                            src="https://www3.epa.gov/carbon-footprint-calculator/">
+                        </iframe>
+                    </div>
                 </div>
-                <Container>
-                    <Box maxWidth={400}>
-                        <form onSubmit={this.submitFootprint}>
-                        <InputLabel>Your footprint: </InputLabel>
-                        <Input
-                            required
-                            onChange={this.handleFootprint}
-                            type="number"
-                            placeholder="my footprint is...">
-                        </Input>
-                        </form>
-                    </Box>
-                </Container>
             </div>
         )
     }

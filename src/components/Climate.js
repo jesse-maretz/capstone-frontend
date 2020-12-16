@@ -2,28 +2,47 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Container, Button } from '@material-ui/core';
 import Navbar from './Navbar'
-
+import { Line } from 'react-chartjs-2'
+import testCsv from './../datasets/test.csv'
 
 
 class Climate extends Component {
     constructor(props){
         super(props)
         this.state = {
-            locations: []
+            chartData: {}
         }
     }
 
 
 
-    componentDidMount = () => {
 
 
-        // https://data.giss.nasa.gov/gistemp/
-            // Zonal annual means 1880-present CSV
-        console.log("mounted")
-
+    chart = () => {
+        this.setState({chartData: {
+            labels: [],
+            datasets: [
+                {
+                    label: 'zonal means',
+                    data: []
+                }
+            ]
+        }
+        })
     }
 
+
+
+
+
+
+
+    componentDidMount = () => {
+    }
+
+    updateData = () => {
+
+    }
 
     render() { 
         return (
@@ -45,6 +64,10 @@ class Climate extends Component {
                         >Back
                         </Button>
                     </Link>
+                    <Button
+                    onClick={this.getData}>
+                        Get Nasa Data
+                    </Button>
                 </Container>
             </div>
         );

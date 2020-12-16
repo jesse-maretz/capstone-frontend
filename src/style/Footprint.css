@@ -1,0 +1,9 @@
+.footprintMain {
+    display: flex;
+    justify-content: center;
+    background-color: #C6E7CE;
+}
+.calc {
+    display: flex;
+    justify-content: center;
+}
