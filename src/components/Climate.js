@@ -38,6 +38,11 @@ class Climate extends Component {
 
 
     componentDidMount = () => {
+        fetch(testCsv)
+            .then((res) => res.json())
+            .then(data => {
+                console.log(data)
+            })
     }
 
     updateData = () => {

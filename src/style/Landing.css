@@ -1,8 +1,10 @@
 main {
     display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    background: url(./../images/NatureBackground.png);
+    background-size: cover;
+    height: 300px;
 }
 .land1left {
     color: green;
@@ -11,9 +13,10 @@ main {
 .land2 {
     display: flex;
     justify-content: center;
-    background-color: #ccc
+    background-color: whitesmoke;
 }
 .land2card {
     margin: 150px;
     border: 2px solid black;
+    padding: 15px;
 }

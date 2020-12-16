@@ -29,19 +29,19 @@ class Landing extends Component{
                             </Link>
                         </Container>
                     </div>
-                    <div className="land1right">
-                        <Trending />
-                    </div>
                 </main>
+                <div className="land1right">
+                        <Trending />
+                </div>
                 <div className="land2">
                     <div className="land2card">
                         <h2>NASA Climate Data</h2>
                     </div>
                     <div className="land2card">
-                        <h2>Carbon Footprint</h2>
+                        <h2>Energy Data</h2>
                     </div>
                     <div className="land2card">
-                        <h2>Energy Data</h2>
+                        <h2>Carbon Footprint</h2>
                     </div>
                 </div>                
             </div>
