@@ -89,6 +89,15 @@ class LoginReg extends Component {
                             </Link>
                         </form>
                     </Box>
+                    <br></br>
+                    <br></br>
+                    <Box>
+                        <Link to='/'>
+                            <Button>
+                                Back
+                            </Button>
+                        </Link>
+                    </Box>
                 </Container>
             </div>
         );
