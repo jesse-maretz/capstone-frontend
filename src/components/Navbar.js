@@ -15,28 +15,28 @@ class Navbar extends Component{
                     <Link to='/'>
                         <Button
                         variant='contained'
-                        color='primary'>
+                        color='inherit'>
                             Home
                         </Button>
                     </Link>
                     <Link to='/data'>
                         <Button
                         variant='contained'
-                        color='primary'>
+                        color='inherit'>
                             Data charts
                         </Button>
                     </Link>
                     <Link to='/footprint'>
                         <Button
                         variant='contained'
-                        color='primary'>
+                        color='inherit'>
                             Carbon Footprint
                         </Button>
                     </Link>
                     <Link to='/habits'>
                         <Button
                         variant='contained'
-                        color='primary'>
+                        color='inherit'>
                             Habits
                         </Button>
                     </Link>

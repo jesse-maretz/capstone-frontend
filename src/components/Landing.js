@@ -21,7 +21,7 @@ class Landing extends Component{
                     <Navbar />
                 </header>
                 <main>
-                    <div className="land1left">
+                    <div className="land1join">
                         <h1>We'd love for you to join us!</h1>
                         <Container>
                             <Link to='/loginReg'>
@@ -29,18 +29,27 @@ class Landing extends Component{
                             </Link>
                         </Container>
                     </div>
+                    <div className="land1about">
+                        <h1>Natural Data</h1>
+                        <p>Welcome to Natural Data! Our site is under construction, so this is just going to be filler -- like a lorem ipsum if you will. Please don't mind the mess!</p>
+                    </div>
                 </main>
-                <div className="land1right">
-                        <Trending />
-                </div>
                 <div className="land2">
-                    <div className="land2card">
+                    <div className="land2trending">
+                        <Trending />
+                    </div>
+                    <div className="land2img">
+                        <img src="./../images/polarbear.jpg" />
+                    </div>
+                </div>
+                <div className="land3">
+                    <div className="land3card">
                         <h2>NASA Climate Data</h2>
                     </div>
-                    <div className="land2card">
+                    <div className="land3card">
                         <h2>Energy Data</h2>
                     </div>
-                    <div className="land2card">
+                    <div className="land3card">
                         <h2>Carbon Footprint</h2>
                     </div>
                 </div>                

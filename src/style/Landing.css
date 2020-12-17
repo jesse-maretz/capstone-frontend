@@ -5,17 +5,34 @@ main {
     background: url(./../images/NatureBackground.png);
     background-size: cover;
     height: 300px;
+    opacity: 0.5;
 }
-.land1left {
+.land1join {
     color: green;
     text-align: center;
+    width: 50vw;
+}
+.land1about {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
 .land2 {
+    display: flex;
+}
+.land2trending {
+    width: 50vw;
+    text-align: justify;
+}
+.land3 {
     display: flex;
     justify-content: center;
     background-color: whitesmoke;
 }
-.land2card {
+.land3card {
     margin: 150px;
     border: 2px solid black;
     padding: 15px;
