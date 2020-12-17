@@ -39,9 +39,11 @@ class Landing extends Component{
                         <Trending />
                     </div>
                     <div className="land2img">
-                        <img src="./../images/polarbear.jpg" />
+                        <img src={"src/images/polarbear.jpg"} />
                     </div>
                 </div>
+
+
                 <div className="land3">
                     <div className="land3card">
                         <h2>NASA Climate Data</h2>
@@ -52,7 +54,9 @@ class Landing extends Component{
                     <div className="land3card">
                         <h2>Carbon Footprint</h2>
                     </div>
-                </div>                
+                </div>       
+                
+                         
             </div>
         )
     }
