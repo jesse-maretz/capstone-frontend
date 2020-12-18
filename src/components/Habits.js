@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
-
+import './../style/Habits.css'
+import construction from './../images/construction.png'
 
 class Habits extends Component{
     constructor(props){
@@ -34,7 +35,8 @@ class Habits extends Component{
                 <header>
                     <Navbar />
                 </header>
-                <h1>This is the Habits page</h1>
+                <h1>Under construction</h1>
+                <img src={construction} />
             </div>
         )
     }
