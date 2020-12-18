@@ -5,7 +5,10 @@ main {
     background: url(./../images/NatureBackground.png);
     background-size: cover;
     height: 300px;
-    opacity: 0.5;
+    opacity: 0.7;
+}
+main h1 {
+    opacity: 1.0;
 }
 .land1join {
     color: green;
@@ -22,6 +25,8 @@ main {
 }
 .land2 {
     display: flex;
+    background-color: #C6E7CE;
+    padding: 25px;
 }
 .land2trending {
     width: 50vw;
@@ -31,9 +36,10 @@ main {
     display: flex;
     justify-content: center;
     background-color: whitesmoke;
+    padding: 25px;
 }
 .land3card {
-    margin: 150px;
+    margin: 50px;
     border: 2px solid black;
     padding: 15px;
 }

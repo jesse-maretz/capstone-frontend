@@ -25,16 +25,16 @@ class TrendingStory extends Component{
 
     render(){
         return(
-            <div>
+            <div className="trendingDiv">
                 <h1>Climate change in the news</h1>
                 {
                     this.state.feed.length ?
                     this.state.feed.map((news, i)=>{
                         console.log(news)
                         return <div key={i}>
-                            <Link to={news.url}>
+                            <a href={news.url}>
                             {news.title}<br/>
-                            </Link>
+                            </a>
                             <br/>
                         </div>
                     }) : ""
