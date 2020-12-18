@@ -4,7 +4,7 @@ import { Container, Button } from '@material-ui/core';
 import Navbar from './Navbar'
 import { Line } from 'react-chartjs-2'
 import testCsv from './../datasets/test.csv'
-
+const axios = require('axios').default
 
 class Climate extends Component {
     constructor(props){
@@ -33,6 +33,17 @@ class Climate extends Component {
 
 
 
+    getNoaa = (e) => {
+        console.log(e)
+        axios.get("http://www.ncdc.noaa.gov/cdo-web/api/v2/locations",{
+            params: {
+                ID: process.env.REACT_APP_CLIMATE_TOKEN
+            }
+        })
+            .then((e)=>{
+                console.log(e)
+            })
+    }
 
 
 
@@ -69,6 +80,14 @@ class Climate extends Component {
                         >Back
                         </Button>
                     </Link>
+                    <Button
+                    onClick={this.getData}>
+                        Get Nasa Data
+                    </Button>
+                    <Button
+                    onClick={this.getNoaa}>
+                        Get NOAA Data
+                    </Button>
                     <Button
                     onClick={this.getData}>
                         Get Nasa Data

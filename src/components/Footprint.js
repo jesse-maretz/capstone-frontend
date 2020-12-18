@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Container, Button, InputLabel, Box, Input } from '@material-ui/core';
 import iframe from 'react-iframe' 
 import Navbar from './Navbar'
+import Calendar from 'react-calendar'
 import './../style/Footprint.css'
 
 
@@ -9,10 +10,15 @@ class Footprint extends Component{
     constructor(props){
         super(props)
         this.state = {
+            date: "",
             footprint: 0
         }
     }
 
+    handleDate = (e) => {
+        console.log(e.target)
+        this.setState({date: e.target})
+    }
     handleFootprint = (e) => {
         this.setState({footprint: e.target.value})
     }
@@ -28,9 +34,15 @@ class Footprint extends Component{
                     <Navbar />
                 </header>
                 <div className="footprintMain">
-                    <Container>
+                    <Container className="footprintForm">
                         <Box maxWidth={400}>
                             <form onSubmit={this.submitFootprint}>
+                            <InputLabel>Date: </InputLabel>
+                            <Calendar
+                                required
+                                defaultView="month"
+                                onChange={this.handleDate}>
+                            </Calendar>
                             <InputLabel>Your footprint: </InputLabel>
                             <Input
                                 required
@@ -38,6 +50,7 @@ class Footprint extends Component{
                                 type="number"
                                 placeholder="my footprint is...">
                             </Input>
+                            <Button>Submit</Button>
                             </form>
                         </Box>
                     </Container>

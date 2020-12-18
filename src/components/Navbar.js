@@ -19,11 +19,18 @@ class Navbar extends Component{
                             Home
                         </Button>
                     </Link>
-                    <Link to='/data'>
+                    <Link to='/data/climate'>
                         <Button
                         variant='contained'
                         color='inherit'>
-                            Data charts
+                           Climate data
+                        </Button>
+                    </Link>
+                    <Link to='/data/energy'>
+                        <Button
+                        variant='contained'
+                        color='inherit'>
+                            Energy Data
                         </Button>
                     </Link>
                     <Link to='/footprint'>

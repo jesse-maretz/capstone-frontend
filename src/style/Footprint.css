@@ -3,7 +3,11 @@
     justify-content: center;
     background-color: #C6E7CE;
 }
+.footprintForm {
+    padding: 10px;
+}
 .calc {
     display: flex;
     justify-content: center;
+    width: 75vw;
 }

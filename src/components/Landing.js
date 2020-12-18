@@ -55,8 +55,19 @@ class Landing extends Component{
                         <h2>Carbon Footprint</h2>
                     </div>
                 </div>       
-                
-                         
+                <div className="land3">
+                    <div className="land3card">
+                        <h2>NASA Climate Data</h2>
+                    </div>
+                    <div className="land3card">
+                        <h2>Energy Data</h2>
+                    </div>
+                    <div className="land3card">
+                        <h2>Carbon Footprint</h2>
+                    </div>
+                </div>       
+
+
             </div>
         )
     }
