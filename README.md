@@ -1,4 +1,4 @@
-# Capstone Project - Natural Data
+# Natural Data
 This project serves as a sort of catch-all for environmental science information.
 
 ## Climate Data
