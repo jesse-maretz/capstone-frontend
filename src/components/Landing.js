@@ -6,6 +6,9 @@ import './../style/Landing.css'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Container, Button } from '@material-ui/core';
 import polarBear from './../images/polarbear.png'
+import cclLogo from './../images/cclLogo.png'
+import natureConservancy from './../images/natureConservancy.png'
+import wwfLogo from './../images/wwfLogo.png'
 
 class Landing extends Component{
     constructor(props){
@@ -54,22 +57,21 @@ class Landing extends Component{
                     </div>
                 </div>
 
-
+                <h2>Meet our friends</h2>
                 <div className="land3">
-                    <h2>Meet our friends</h2>
                     <div className="land3card"
                     onClick={this.handleCCL}>
-                        <img src="src/images/cclLogo.png" />
+                        <img src={cclLogo} />
                         <h3>Citizen's Climate Lobby</h3>
                     </div>
                     <div className="land3card"
                     onClick={this.handleNatureConservancy}>
-                        <img src="src/images/natureConservancy.png" />
+                        <img src={natureConservancy} />
                         <h3>The Nature Conservancy</h3>
                     </div>
                     <div className="land3card"
                     onClick={this.handleWWF}>
-                        <img src="src/images/wwfLogo.png" />
+                        <img src={wwfLogo} />
                         <h3>World Wildlife Fund</h3>
                     </div>
                 </div>

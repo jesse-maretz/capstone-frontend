@@ -10,7 +10,8 @@ class Climate extends Component {
     constructor(props){
         super(props)
         this.state = {
-            chartData: {}
+            chartData: {},
+            noaaData: {}
         }
     }
 
@@ -35,14 +36,21 @@ class Climate extends Component {
 
     getNoaa = (e) => {
         console.log(e)
-        axios.get("http://www.ncdc.noaa.gov/cdo-web/api/v2/locations",{
-            params: {
-                ID: process.env.REACT_APP_CLIMATE_TOKEN
+        fetch("http://www.ncdc.noaa.gov/cdo-web/api/v2/locations",{
+            header: {
+                "token": "process.env.REACT_APP_CLIMATE_TOKEN"
             }
         })
             .then((e)=>{
                 console.log(e)
             })
+            /*
+            .then((res) => res.json())
+            .then((noaa)=>{
+                console.log(noaa)
+                this.setState({noaaData:noaa})
+            })
+            */
     }
 
 
@@ -93,6 +101,7 @@ class Climate extends Component {
                         Get Nasa Data
                     </Button>
                 </Container>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X5P-CDVTT_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         );
     }

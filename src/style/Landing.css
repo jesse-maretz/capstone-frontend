@@ -26,11 +26,20 @@ main h1 {
 .land2 {
     display: flex;
     background-color: #C6E7CE;
-    padding: 25px;
 }
 .land2trending {
     width: 50vw;
     text-align: justify;
+    padding: 25px;
+
+}
+
+h2 {
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 25px;
+    font-size: 35px;
 }
 .land3 {
     display: flex;
@@ -42,4 +51,8 @@ main h1 {
     margin: 50px;
     border: 2px solid black;
     padding: 15px;
+}
+.land3card img {
+    width: 200px;
+    height: 200px;
 }
