@@ -31,7 +31,9 @@ main h1 {
     width: 50vw;
     text-align: justify;
     padding: 25px;
-
+}
+.land2img {
+    width: 50vw;
 }
 
 h2 {

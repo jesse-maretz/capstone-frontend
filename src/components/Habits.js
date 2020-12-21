@@ -35,7 +35,7 @@ class Habits extends Component{
                 <header>
                     <Navbar />
                 </header>
-                <h1>Under construction</h1>
+                <h1 className="construction">Under construction</h1>
                 <img src={construction} />
             </div>
         )
