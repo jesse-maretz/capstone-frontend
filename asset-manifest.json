@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/capstone-frontend/static/css/main.1bd8688f.chunk.css",
+    "main.js": "/capstone-frontend/static/js/main.f46a86b4.chunk.js",
+    "main.js.map": "/capstone-frontend/static/js/main.f46a86b4.chunk.js.map",
+    "runtime-main.js": "/capstone-frontend/static/js/runtime-main.8644da44.js",
+    "runtime-main.js.map": "/capstone-frontend/static/js/runtime-main.8644da44.js.map",
+    "static/js/2.51d7fc3b.chunk.js": "/capstone-frontend/static/js/2.51d7fc3b.chunk.js",
+    "static/js/2.51d7fc3b.chunk.js.map": "/capstone-frontend/static/js/2.51d7fc3b.chunk.js.map",
+    "static/js/3.2a492493.chunk.js": "/capstone-frontend/static/js/3.2a492493.chunk.js",
+    "static/js/3.2a492493.chunk.js.map": "/capstone-frontend/static/js/3.2a492493.chunk.js.map",
+    "index.html": "/capstone-frontend/index.html",
+    "static/css/main.1bd8688f.chunk.css.map": "/capstone-frontend/static/css/main.1bd8688f.chunk.css.map",
+    "static/js/2.51d7fc3b.chunk.js.LICENSE.txt": "/capstone-frontend/static/js/2.51d7fc3b.chunk.js.LICENSE.txt",
+    "static/media/Landing.css": "/capstone-frontend/static/media/NatureBackground.207f6e8c.png",
+    "static/media/construction.be016cce.png": "/capstone-frontend/static/media/construction.be016cce.png",
+    "static/media/natureConservancy.179f2131.png": "/capstone-frontend/static/media/natureConservancy.179f2131.png",
+    "static/media/polarbear.908887a0.png": "/capstone-frontend/static/media/polarbear.908887a0.png",
+    "static/media/test.558c10f7.csv": "/capstone-frontend/static/media/test.558c10f7.csv",
+    "static/media/wwfLogo.21b5c3ce.png": "/capstone-frontend/static/media/wwfLogo.21b5c3ce.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8644da44.js",
+    "static/js/2.51d7fc3b.chunk.js",
+    "static/css/main.1bd8688f.chunk.css",
+    "static/js/main.f46a86b4.chunk.js"
+  ]
+}
