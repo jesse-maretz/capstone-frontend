@@ -10,6 +10,7 @@ import cclLogo from './../images/cclLogo.png'
 import natureConservancy from './../images/natureConservancy.png'
 import wwfLogo from './../images/wwfLogo.png'
 
+
 class Landing extends Component{
     constructor(props){
         super(props)
@@ -75,8 +76,6 @@ class Landing extends Component{
                         <h3>World Wildlife Fund</h3>
                     </div>
                 </div>
-
-
                 <footer>
                     <Footer />
                 </footer>
