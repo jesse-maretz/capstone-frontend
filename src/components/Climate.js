@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Container, Button } from '@material-ui/core';
+import './../style/Climate.css'
 import Navbar from './Navbar'
+import polarbearice from './../images/polarbearice.png'
 import { Line } from 'react-chartjs-2'
 import testCsv from './../datasets/test.csv'
 const axios = require('axios').default
@@ -72,7 +74,12 @@ class Climate extends Component {
         return (
             <div>
                 <Navbar />
-                <h1>This is the climate page</h1>
+
+                <div>
+                    <img src={polarbearice} className="polarimg" />
+                    <h1>Climate</h1>
+                </div>
+
                 <Container>
                     <Link to='/'>
                         <Button
@@ -101,7 +108,10 @@ class Climate extends Component {
                         Get Nasa Data
                     </Button>
                 </Container>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/X5P-CDVTT_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <div>
+                </div>
+
             </div>
         );
     }

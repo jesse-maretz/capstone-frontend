@@ -1,0 +1,12 @@
+.polarimg {
+    border-radius: 5px;
+    width: 100vw;
+    height: auto;
+}
+h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-top: -450px;
+    color: whitesmoke;
+    text-shadow: -2.5px 0 steelblue;
+}
