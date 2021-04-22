@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Container, Button } from '@material-ui/core';
 import './../style/Climate.css'
 import Navbar from './Navbar'
+import Trending from './Trending'
 import polarbearice from './../images/polarbearice.png'
 import { Line } from 'react-chartjs-2'
 import testCsv from './../datasets/test.csv'
@@ -75,10 +76,19 @@ class Climate extends Component {
             <div>
                 <Navbar />
 
-                <div>
+                <div className="climateHeader">
                     <img src={polarbearice} className="polarimg" />
                     <h1>Climate</h1>
                 </div>
+
+
+
+                <div className="trending">
+                    <Trending />
+                </div>
+
+
+
 
                 <Container>
                     <Link to='/'>

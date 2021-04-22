@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
-import Trending from './Trending'
 import Footer from './Footer'
 import './../style/Landing.css'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
@@ -50,9 +49,6 @@ class Landing extends Component{
 
 
                 <div className="land2">
-                    <div className="land2trending">
-                        <Trending />
-                    </div>
                     <div className="land2img">
                         <img src={polarBear} />
                     </div>

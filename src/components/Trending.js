@@ -26,7 +26,7 @@ class TrendingStory extends Component{
     render(){
         return(
             <div className="trendingDiv">
-                <h1>Climate change in the news</h1>
+                <h2>Climate change in the news</h2>
                 {
                     this.state.feed.length ?
                     this.state.feed.map((news, i)=>{
